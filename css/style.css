@@ -1,0 +1,401 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'TmoneyRoundWindRegular';
+}
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*top*/
+#topMenu{
+	position: absolute;
+	width:100%;	
+	height: 770px;
+	top: 0px;
+	left: 0px;
+	background-color: #ffffff;
+}
+.title{
+	position: relative;
+	width: 700px;
+	height: 200px;
+	margin : auto;
+	display : block;
+	top:320px;
+}
+.icon{
+	position: relative;
+	display : block;
+	margin : auto;
+	width: 100px;
+	height: 100px;
+	top:440px;
+	background-repeat: no-repeat;
+	animation: scrollIcon 1.5s infinite;
+	
+}
+/*top*/
+
+/*navi*/
+#navi1{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top:0;
+	z-index: 1;
+	background-color: #fff;
+}
+.navi1{
+	float: left;
+	width:33.3%;
+	text-align:center;
+	line-height:50px;
+	cursor: pointer;
+}
+.navi1:hover,
+.navi1_1.active{
+	background-color: #fbf7f0;
+}
+.navi1_2.active{
+	background-color: #555555;
+}
+.navi1_3.active{
+	background-color: #fbf7f0;
+}
+.navi1 a{
+	text-decoration:none;
+	font-size: 22px;
+	color: #555;
+	display: block;
+}
+.navi1_1.active a{
+	color: #555555;
+}
+.navi1_2.active a{
+	color: #fbf7f0;
+}
+.navi1_3.active a{
+	color: #555555;
+}
+
+.page-indicator {
+	position:fixed;
+	top:50%;
+	left: 20px;
+	width: 250px;
+	height:auto;
+	z-index: 3;
+	transform: translateY(-50%);
+    transition:transform 0.3s;
+    display: none;
+}
+
+.page-indicator ul li a.active {
+    color: #fbf7f0;
+	background-color: #555555;
+}
+.page-indicator ul li {
+	margin-top: 20px;
+	position:relative;
+	width: 250px;
+	float: left;
+	height:30px;
+	color: #d9e4dd;
+	cursor: pointer;
+	z-index: 5;
+	text-decoration: disc;
+}
+.page-indicator ul li a{
+	margin-left:-30px;
+	padding: 7px;
+	border-radius: 50px;
+	background-color: #cdc9c3;
+	color: #fbf7f0;
+	text-decoration: none;
+}
+
+html[data-current-page-index="0"] .page-indicator {
+    transform:translateY(0);
+}
+/*navi*/
+
+/*Profile1*/
+#profile{
+	position: relative;
+	width:100%;
+	margin: 0px;
+	height: 2100px;
+	top: 770px;
+	left: 0px;
+	background-color: #fbf7f0;
+}
+.titleName{
+	position: absolute;
+	color: #cdc9c3;	
+	border: 2px solid;
+	border-radius: 25px;
+	padding: 10px;
+	top:100px;
+	left: 93px;
+	font-size: 1.5em;
+	font-family: 'TmoneyRoundWindExtraBold';
+}
+.section{
+	position: absolute;
+	top:230px;
+	left: 90px; 
+}
+.section2,.section4, .section6{
+	left: 320px;
+}
+.section3,.section4{
+	top: 510px;
+	float: right;
+}
+.section5,.section6{
+	top:970px;
+	float: right;
+
+}
+.section div{
+	position: relative;
+	margin-top:30px;
+	color: #555555;
+	font-size: 1.3em;	
+}
+.adobeLogo{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-top: -13px;
+	margin-left: 30px;
+}
+/*experience*/
+#experience{
+	position: relative;
+}
+/*experience*/
+#premiere p{
+	font-size: 1.3em;
+}
+
+#AfterEffects_box,
+#premiere_box{
+	position: relative;
+	max-width:100%;
+	margin:0;
+	height: auto;
+	background-color: #555555;
+	padding-bottom: 300px;
+
+}
+#premiere_box{
+	background-color: #fbf7f0;
+	top:-15px;
+}
+#AfterEffects,
+#premiere,
+.Premiere{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	padding: 0px 25px;
+	top: 200px;
+}
+.Premiere{
+	margin: 0;
+	padding: 0;
+	top: 0px;
+}
+#AfterEffects > li{
+	border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 270px;
+    height: 500px;
+    margin-bottom: 25px;
+}
+#AfterEffects li img{
+	width: 270px;
+	height: 500px;
+}
+
+.Premiere li{
+    overflow: hidden;
+    width: 300px;
+    height: 169px;
+    margin-bottom: 5px;
+}
+
+#premiere > li{
+/*	border-radius: 8px;*/
+	overflow: hidden;
+    cursor: pointer;
+    width: 911px;
+    height: 512px;
+    margin-bottom: 25px;
+    
+}
+#premiere div{
+	padding-top:50px; 
+	/*margin-bottom:120px;*/
+	background-color: 000;
+}
+ul{ list-style:none; }
+li p{
+	position: absolute;
+	top: 500px;
+	color: #d9e4dd;
+}
+#premiere .pop_title{
+	position: relative;
+	float: left;
+	top: 10px;
+	left: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 25px;
+	font-family: 'TmoneyRoundWindExtraBold';
+}
+
+
+/*pop*/
+
+#pop{
+	position: fixed;
+	width: 100%;
+	height:100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .5);
+	z-index: 2;
+	display: none;
+}
+.pop{
+	display: flex;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 900px;
+	height: 741px;
+	display: none;
+}
+.pop2{
+	width: 1100px;
+	height: 450px;
+	z-index: 4;
+	display: none;
+}
+.pop3{
+	width: 920px;
+	height: 700px;
+}
+.pop img{
+	position: relative;
+	width: 400px;
+	height: 741px;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+.Premiere{
+	position: relative;	
+	width: 911px;
+	height: 512px;
+	top: -50px;
+	right: 0px;
+	float: left;
+	background-color:#fbf7f0;
+}
+.pop .pop_txt_bg{
+	position: relative;	
+	width: 500px;
+	height: 741px;
+	top: 0px;
+	right: 0px;
+	float: left;
+	background-color:#fbf7f0;
+}
+.pop .pop_txt_bg span{
+	background: linear-gradient(to top, #d9e4dd 50%, transparent 50%);	
+}
+.pop .pop_title{
+	position: relative;
+	top: 60px;
+	left: 20px;
+	font-size: 20px;
+	display: none;	
+	float: left;
+}
+
+.pop .pop_txt{
+	position: relative;
+	padding: 30px;
+	top: 80px;
+	left: 0px;
+	font-size: 20px;
+	display: none;
+}
+.pop_x{
+	position: relative;	
+	width: 70px;
+    height: 70px;
+    font-size: 2.5em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 70px;
+	top: 0px;
+	right: 0px;
+	float: right;
+	color:#cdc9c3;
+	z-index: 3;
+}
+
+.Premiere img{
+	position: relative;
+	width: 300px;
+	height: 169px;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+#premiere .pop_txt{
+	margin-top: 40px;
+}
+#premiere div{
+	background-color: 000;
+}
+/*afterEffects*/
+@keyframes scrollIcon{
+	0%, 100% {
+    transform: translateY(0);
+	}
+	50% {
+	    transform: translateY(-10px);
+	}
+	90% {
+	    transform: translateY(2px);
+	}
+}
